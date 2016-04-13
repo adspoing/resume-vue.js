@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/vue/1.0.21/vue.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="app.css" />
+  <link rel="stylesheet" type="text/css" href="iconfont.css">
+
+</head>
+<body>
+      <div id="app">
+      <div id="head">
+      <h1> {{person.name}}</h1>
+      <img class="icon" src="asset/person.png">
+      <span class="lineword">联系方式</span>
+      <div class="line"></div>
+      <ul id="personal">
+        <li><strong>电子邮箱:  </strong>{{person.email}}</li>
+        <li><strong>联系电话:  </strong>{{person.phone}}</li>
+        <li><strong>求职意向:  </strong>{{person.like}}</li>
+      </ul>
+      </div>
+      <div id="education">
+          <img class="icon" src="asset/education.png">
+          <span class="lineword">教育经历</span>
+          <div class="line"></div>
+          <div id="edu"  v-for="item in education">
+          <span id="tm">{{item.tm_start}}  -  {{item.tm_end}}</span>
+          <span id="school">{{ item.school }}</span>
+          <span id="department">{{item.department}}</span>
+          <span id="degree">{{item.degree}}</span>
+          </div>
+      </div>
+      <div id="skill">
+           <img class="icon" src="asset/skills.png">
+           <span class="lineword">技能</span>
+          <div class="line"></div>
+          <ul id="skillul">
+          <li v-for="item in skill">
+            {{item.skills}}
+          </li>
+          </ul>
+      </div>
+      <div id="project">
+          <img class="icon" src="asset/project.png">
+          <span class="lineword">项目经历</span>
+          <div class="line"></div>
+         <div id="pro" v-for="item in project">
+          <span id="tm">{{item.tm_start}} - {{item.tm_end}}</span>
+           <span id="name">{{ item.name }}</span>
+           <span id="duty">{{item.duty}}</span>
+           <ul id="pro-it">
+           <li v-for="x in item.item">
+             {{x.items}}
+           </li>
+           </ul>
+          </div>
+      </div>
+      <div id="experience">
+      <img class="icon" src="asset/experience.png">
+      <span class="lineword">实习经历</span>
+      <div class="line"></div>
+         <div id="exp" v-for="item in experience">
+          <span id="tm">{{item.tm_start}} - {{item.tm_end}}</span>
+           <span id="company">{{ item.company }}</span>
+           <span id="duty">{{item.duty}}</span>
+          </div>
+      </div>
+      <div id="awards">
+      <img class="icon" src="asset/awards.png">
+      <span class="lineword">获得奖项</span>
+      <div class="line"></div>
+        <div id="aw">
+         <li v-for="item in awards">
+             {{item.item}}
+          </li>
+          </div>
+      </div>
+      </body>
+<script type="text/javascript" src="app.js">
+</script>
+</html>
