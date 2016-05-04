@@ -30,6 +30,14 @@
         {skills:"了解CSS预编译语言Sass/Less"},
         ],
         project:[
+        {tm_start:'2016.03',
+         tm_end:'2016.03',
+         name:'blackjack 21点游戏',
+         duty:'程序员，前端',
+         item:[
+            {items:"21点游戏,使用原生js实现"},
+            {items:"游戏地址:http://adspoing.github.io/blackjack/index.html"}
+         ]},
         {tm_start:'2016.02',
          tm_end:'至今',
          name:'百度IFE前端学院',
@@ -37,7 +45,7 @@
          item:[
             {items:"2048游戏,仿照网络上经典的2048游戏玩法,使用jquery框架"},
 			{items:"响应式布局适应了手机端。Github地址:https://github.com/adspoing/2048game"},
-			{items:"个人在线简历,使用了vue.js框架,http://www.springwon.cn/Resume/cn.html"},
+			{items:"个人在线简历,http://www.springwon.cn/Resume/cn.html"},
 			{items:"其他一些小项目,包括自适应、响应式的布局,Javascript原生开发,表单验证,排 序算法的可视化,模拟行星航空系统等,目前还在跟随春季班学习"}
          ]},
          {tm_start:'2016.02',
