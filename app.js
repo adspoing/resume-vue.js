@@ -89,6 +89,12 @@
             tm_end:'2015.12',
             company:'杭州尚青科技有限公司',
             duty:'安卓&web开发'
+        },
+        {
+            tm_start:'2016.03',
+            tm_end:'2016.06',
+            company:'杭州疆域信息技术有限公司',
+            duty:'前端开发'
         }
         ],
         awards:[
